@@ -45,6 +45,7 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 <br />
 <h2>Step 2: Prepare the Environment</h2>
  1. Download osTicket Installation Files
+\\
      - Download the osTicket Installation Files.zip and unzip it on your desktop. The extracted folder should be called (osTicket Installation Files).
 
  2. Install IIS and Enable CGI Support
