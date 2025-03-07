@@ -43,7 +43,7 @@ Head to https://portal.azure.com/ and create a Virtual Machine running Windows 1
 Once the Machine is complete copy the Public ip address of the VM and use Remote Desktop Connection (windows) or the Windows app (macOS) to remote into the VM.
 </p>
 <br />
-Step 2: Prepare the Environment
+<h2>Step 2: Prepare the Environment</h2>
  - Download osTicket Installation Files
 Download the osTicket-Installation-Files.zip and unzip it on your desktop. The extracted folder should be called osTicket-Installation-Files.
 
