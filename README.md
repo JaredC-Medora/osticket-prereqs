@@ -110,6 +110,21 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
       - Stop and start IIS to ensure the new changes are applied.
 
 
+
+<h2>Step 6: Configure PHP Extensions</h2>
+
+
+1. Enable Required PHP Extensions
+    - In IIS, under Sites > Default > osTicket, double-click on PHP Manager.
+    - Click Enable or disable an extension and enable the following extensions:
+       - php_imap.dll
+       - php_intl.dll
+       - php_opcache.dll
+
+2. Refresh the osTicket Site
+    - Refresh the osTicket site in your browser to apply the changes.
+
+
 </p>
 <br />
 
