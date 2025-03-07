@@ -39,9 +39,29 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 Head to https://portal.azure.com/ and create a Virtual Machine running Windows 10 Pro, Version 22H2 -x64 Gen2. For the Size of the Virtual Machine select one with 2 vCPUs and 8 GiB memory.
+
+Once the Machine is complete copy the Public ip address of the VM and use Remote Desktop Connection (windows) or the Windows app (macOS) to remote into the VM.
 </p>
 <br />
+Step 2: Prepare the Environment
+Download osTicket Installation Files
+ Download the osTicket-Installation-Files.zip and unzip it on your desktop. The extracted folder should be called osTicket-Installation-Files.
 
+
+Install IIS and Enable CGI Support
+ To run PHP scripts, you'll need to install IIS (Internet Information Services) and enable CGI:
+
+
+Go to Control Panel > Programs > Turn Windows Features On or Off.
+Expand World Wide Web Services > Application Development Features, and check CGI.
+Install PHP Manager for IIS
+
+
+Navigate to the osTicket-Installation-Files folder and run PHPManagerForIIS_V1.5.0.msi.
+Install the Rewrite Module
+
+
+From the osTicket-Installation-Files folder, run rewrite_amd64_en-US.msi to install the URL Rewrite module for IIS.
 <p>
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
