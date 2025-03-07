@@ -97,6 +97,8 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 
 
 <h2>Step 5: Intall osTicket</h2>
+  
+  
   1. Unzip osTicket Files
       - From the osTicket-Installation-Files folder, unzip osTicket-v1.15.8.zip.
       - Copy the upload folder to C:\inetpub\wwwroot.
