@@ -65,6 +65,7 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 <p>
 <h2>Step 3: Install PHP and Dependencies</h2>
 
+
  1. Create a PHP Directory
      - Create a directory C:\PHP on your system.
  
@@ -78,6 +79,35 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
      - From the osTicket-Installation-Files folder, run mysql-5.5.62-win32.msi.
      - Choose Typical Setup and Launch Configuration Wizard after installation.
      - Set the MySQL Password. (For this example I used ROOT)
+
+
+
+
+  <h2>Step 4: Configure IIS and PHP</h2> 
+   
+   
+  1. Register PHP in IIS
+     - Open IIS as an Administrator.
+     - In IIS, go to PHP Manager, click Register PHP, and point it to C:\PHP\php-cgi.exe.
+  
+  2. Restart IIS
+     - In IIS, click Stop and then Start to reload the server with the new configurations.
+
+
+
+
+<h2>Step 5: Intall osTicket</h2>
+  1. Unzip osTicket Files
+      - From the osTicket-Installation-Files folder, unzip osTicket-v1.15.8.zip.
+      - Copy the upload folder to C:\inetpub\wwwroot.
+
+  2. Rename the upload Folder
+      - In C:\inetpub\wwwroot, rename the upload folder to osTicket.
+
+  3. Restart IIS Again
+      - Stop and start IIS to ensure the new changes are applied.
+
+
 </p>
 <br />
 
