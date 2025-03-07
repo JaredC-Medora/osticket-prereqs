@@ -63,7 +63,21 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h2>Step 3: Install PHP and Dependencies</h2>
+
+ 1. Create a PHP Directory
+     - Create a directory C:\PHP on your system.
+ 
+ 2. Install PHP
+     - From the osTicket-Installation-Files folder, unzip php-7.3.8-nts-Win32-VC15-x86.zip into C:\PHP.
+
+ 3. Install Visual C++ Redistributable
+     - From the osTicket-Installation-Files folder, run VC_redist.x86.exe to install the required C++ redistributable.
+ 
+ 4. Install MySQL
+     - From the osTicket-Installation-Files folder, run mysql-5.5.62-win32.msi.
+     - Choose Typical Setup and Launch Configuration Wizard after installation.
+     - Set the MySQL Password. (For this example I used ROOT)
 </p>
 <br />
 
