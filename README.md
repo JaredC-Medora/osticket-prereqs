@@ -44,24 +44,20 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 </p>
 <br />
 <h2>Step 2: Prepare the Environment</h2>
- - Download osTicket Installation Files
-Download the osTicket-Installation-Files.zip and unzip it on your desktop. The extracted folder should be called osTicket-Installation-Files.
+ 1. Download osTicket Installation Files
+     - Download the osTicket-Installation-Files.zip and unzip it on your desktop. The extracted folder should be called osTicket-Installation-Files.
 
 
- - Install IIS and Enable CGI Support
-To run PHP scripts, you'll need to install IIS (Internet Information Services) and enable CGI:
+ 2. Install IIS and Enable CGI Support
+    To run PHP scripts, you'll need to install IIS (Internet Information Services) and enable CGI:
+     - Go to Control Panel > Programs > Turn Windows Features On or Off.
+     - Expand World Wide Web Services > Application Development Features, and check CGI.
 
+ 3. Install PHP Manager for IIS
+     - Navigate to the osTicket-Installation-Files folder and run PHPManagerForIIS_V1.5.0.msi.
 
- - Go to Control Panel > Programs > Turn Windows Features On or Off.
- - Expand World Wide Web Services > Application Development Features, and check CGI.
-Install PHP Manager for IIS
-
-
- - Navigate to the osTicket-Installation-Files folder and run PHPManagerForIIS_V1.5.0.msi.
-Install the Rewrite Module
-
-
-From the osTicket-Installation-Files folder, run rewrite_amd64_en-US.msi to install the URL Rewrite module for IIS.
+ 4. Install the Rewrite Module
+     - From the osTicket-Installation-Files folder, run rewrite_amd64_en-US.msi to install the URL Rewrite module for IIS.
 <p>
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
