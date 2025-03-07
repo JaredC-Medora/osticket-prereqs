@@ -125,6 +125,59 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
     - Refresh the osTicket site in your browser to apply the changes.
 
 
+
+
+<h2>Step 7: Final Configuration</h2>
+
+
+1. Rename and Set Permissions for Configuration File
+    - Rename ost-sampleconfig.php to ost-config.php in the directory C:\inetpub\wwwroot\osTicket\include.
+    - Set file permissions for ost-config.php:
+      - Right-click on ost-config.php, select Properties.
+      - Go to Security > Advanced, disable inheritance, and remove all existing permissions.
+      - Set new permissions for Everyone with Full Control.
+
+2. Set Up osTicket in the Browser
+   - Open a browser and go to http://localhost/osTicket.
+   - Complete the osTicket setup by providing the following details:
+      - Helpdesk Name: Your desired name.
+      - Default Email: The email that will receive customer emails.
+
+
+
+
+<h2>Step 8: Set Up MySQL Database</h2>
+
+
+1. Install HeidiSQL
+   - From the osTicket-Installation-Files folder, install HeidiSQL.
+   - Open HeidiSQL and create a new session using the following credentials:
+      - Username: root
+      - Password: root
+   - Connect to the session and create a new database called osTicket.
+
+2. Continue osTicket Setup
+   - Back in the browser, enter the following database information:
+     - MySQL Database: osTicket
+     - MySQL Username: root
+     - MySQL Password: root
+   - Click Install Now! to finish the installation.
+
+
+
+
+<h2>Step 9: Access osTicket</h2>
+
+
+1. Helpdesk Login Page
+   After installation, navigate to the helpdesk login page:
+
+   - URL: http://localhost/osTicket/scp/login.php
+
+2. End User osTicket URL
+   The URL for your end users to access osTicket is:
+
+   - URL: http://localhost/osTicket/
 </p>
 <br />
 
