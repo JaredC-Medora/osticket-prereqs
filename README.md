@@ -267,6 +267,6 @@ Once the Machine is complete copy the Public ip address of the VM and use Remote
 
 </p>
 <p>
-PLEASE DO NOT FORGET TO PAUSE OR DELETE ALL AZURE VM's TO REDUCE COSTS/CHARGES
+<h2>PLEASE DO NOT FORGET TO PAUSE OR DELETE ALL AZURE VM's TO REDUCE COSTS/CHARGES</h2>
 </p>
 <br />
